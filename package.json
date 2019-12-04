@@ -1,0 +1,36 @@
+{
+  "name": "gatsby-starter-platinum-theme",
+  "description": "A basic implemention of gatsby-theme-platinum",
+  "version": "0.1.0",
+  "author": "RMP <rogermparent@gmail.com>",
+  "dependencies": {
+    "gatsby": "^2.18.5",
+    "gatsby-theme-platinum": "^0.1.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-starter"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rogermparent/gatsby-starter-platinum-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/rogermparent/gatsby-starter-platinum-theme/issues"
+  }
+}
