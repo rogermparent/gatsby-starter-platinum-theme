@@ -6,7 +6,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 
 export default ({data}) => {
   return(
-    <Layout>
+    <Layout title={data.contentPage.frontmatter.title}>
       <MDXRenderer>
         {data.contentPage.parent.body}
       </MDXRenderer>
@@ -20,6 +20,9 @@ export const query = graphql`
       pagePath
       template
       ... on MdxContentPage {
+        frontmatter {
+          title
+        }
         parent {
           ... on Mdx {
             body
