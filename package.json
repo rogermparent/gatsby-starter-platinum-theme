@@ -5,7 +5,7 @@
   "author": "RMP <rogermparent@gmail.com>",
   "dependencies": {
     "gatsby": "^2.18.5",
-    "gatsby-theme-platinum": "^0.3.3",
+    "gatsby-theme-platinum": "^0.5.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
