@@ -1,9 +1,17 @@
 import React from "react"
-import {graphql, useStaticQuery} from "gatsby"
-import {BaseLayout, SEO} from "gatsby-theme-platinum"
+import { graphql, useStaticQuery } from "gatsby"
+import BaseLayout from "gatsby-theme-platinum/src/components/base-layout"
+import SEO from "gatsby-theme-platinum/src/utils/seo"
 
-const BaseLayoutWithSEO = ({children, description, lang, meta, keywords, title}) => {
-  const {site} = useStaticQuery(graphql`
+const BaseLayoutWithSEO = ({
+  children,
+  description,
+  lang,
+  meta,
+  keywords,
+  title,
+}) => {
+  const { site } = useStaticQuery(graphql`
     {
       site {
         siteMetadata {
@@ -16,7 +24,7 @@ const BaseLayoutWithSEO = ({children, description, lang, meta, keywords, title})
     }
   `)
 
-  const {siteMetadata} = site
+  const { siteMetadata } = site
 
   return (
     <BaseLayout>
@@ -35,4 +43,4 @@ const BaseLayoutWithSEO = ({children, description, lang, meta, keywords, title})
   )
 }
 
-export default BaseLayoutWithSEO;
+export default BaseLayoutWithSEO
