@@ -6,22 +6,26 @@ const SiteFooter = () => {
     <footer
       sx={{
         fontSize: 1,
-        textAlign: 'center',
+        textAlign: "center",
         bg: "primary",
         color: "background",
       }}
       id="footer"
     >
-      <Container sx={{
-        p: 1,
-      }}>
-        Made by RMP,
-        with <a
-               sx={{
-                 variant: 'styles.invertLink'
-               }}
-               href="http://gatsbyjs.org"
-             >Gatsby</a>
+      <Container
+        sx={{
+          p: 1,
+        }}
+      >
+        Made by RMP, with{" "}
+        <a
+          sx={{
+            variant: "styles.invertLink",
+          }}
+          href="http://gatsbyjs.org"
+        >
+          Gatsby
+        </a>
       </Container>
     </footer>
   )

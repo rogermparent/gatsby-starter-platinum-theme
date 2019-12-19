@@ -18,58 +18,57 @@ const SiteHeader = () => {
         }
       }
     }
-  `);
+  `)
 
-  const { title, menuLinks } = data.site.siteMetadata;
+  const { title, menuLinks } = data.site.siteMetadata
 
   return (
     <header
       sx={{
         variant: "styles.invert",
         fontSize: 1,
-        textAlign: 'center',
+        textAlign: "center",
       }}
       id="header"
     >
-      <Container sx={{
-        py: [2,3],
-        px: 1,
-        display: 'flex',
-        flexDirection: ['column', null, 'row'],
-        justifyContent: 'space-between',
-        alignItems: 'center',
-      }}>
+      <Container
+        sx={{
+          py: [2, 3],
+          px: 1,
+          display: "flex",
+          flexDirection: ["column", null, "row"],
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
         <Link
-          to='/'
+          to="/"
           sx={{
-            textDecoration: 'none',
-            color: 'inherit',
-            flex: '0 0 auto',
+            textDecoration: "none",
+            color: "inherit",
+            flex: "0 0 auto",
           }}
         >
-          <Heading sx={{
-            fontSize: [4, 5]
-          }}>{title}</Heading>
+          <Heading
+            sx={{
+              fontSize: [4, 5],
+            }}
+          >
+            {title}
+          </Heading>
         </Link>
-        <Flex
-          as="nav"
-          sx={{ flex: 'row nowrap' }}
-        >
-          {
-            menuLinks.map((link, i)=>(
-              link.type === 'internal' ?
-              <Link
-                to={link.link}
-                sx={{variant: "styles.NavLink"}}
-                key={i}
-              >{link.name}</Link> :
-              <a
-                href={link.link}
-                sx={{variant: "styles.NavLink"}}
-                key={i}
-              >{link.name}</a>
-            ))
-          }
+        <Flex as="nav" sx={{ flex: "row nowrap" }}>
+          {menuLinks.map((link, i) =>
+            link.type === "internal" ? (
+              <Link to={link.link} sx={{ variant: "styles.NavLink" }} key={i}>
+                {link.name}
+              </Link>
+            ) : (
+              <a href={link.link} sx={{ variant: "styles.NavLink" }} key={i}>
+                {link.name}
+              </a>
+            )
+          )}
         </Flex>
       </Container>
     </header>

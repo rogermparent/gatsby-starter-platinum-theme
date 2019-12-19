@@ -3,7 +3,7 @@ import ContainedContainer from "../components/contained-container"
 
 const components = {
   ...BaseComponents,
-  ContainedContainer
+  ContainedContainer,
 }
 
-export default components;
+export default components

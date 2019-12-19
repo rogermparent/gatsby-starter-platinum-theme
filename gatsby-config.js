@@ -4,7 +4,7 @@ module.exports = {
     description: `Speed up your Gatsby development workflow. Designed as an opinionated and high speed starter.`,
     author: `Eric Howey`,
     // Change to your site's address, required for sitemap.xml and robots.txt file
-    siteUrl: `https://gatsby-theme-platinum-demo.netlify.com`, 
+    siteUrl: `https://gatsby-theme-platinum-demo.netlify.com`,
     menuLinks: [
       {
         name: `Page 1`,

@@ -4,18 +4,16 @@ import { graphql } from "gatsby"
 import { Layout } from "gatsby-theme-platinum"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
-export default ({data}) => {
-  return(
+export default ({ data }) => {
+  return (
     <Layout title={data.contentPage.frontmatter.title}>
-      <MDXRenderer>
-        {data.contentPage.parent.body}
-      </MDXRenderer>
+      <MDXRenderer>{data.contentPage.parent.body}</MDXRenderer>
     </Layout>
   )
 }
 export const query = graphql`
   query ContentPageDefaultQuery($id: String!) {
-    contentPage(id: {eq: $id}) {
+    contentPage(id: { eq: $id }) {
       id
       pagePath
       template
