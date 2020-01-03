@@ -5,7 +5,12 @@
   "author": "RMP <rogermparent@gmail.com>",
   "dependencies": {
     "gatsby": "^2.18.5",
-    "gatsby-theme-platinum": "^0.6.1",
+    "gatsby-plugin-manifest": "^2.2.34",
+    "gatsby-plugin-offline": "^3.0.30",
+    "gatsby-plugin-preload-link-crossorigin": "^1.0.2",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sitemap": "^2.2.24",
+    "gatsby-theme-platinum": "^1.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },

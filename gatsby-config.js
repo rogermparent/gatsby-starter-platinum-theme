@@ -52,5 +52,9 @@ module.exports = {
         icon: `assets/logo-512.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-preload-link-crossorigin`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
+    `gatsby-plugin-offline`,
   ],
 }
